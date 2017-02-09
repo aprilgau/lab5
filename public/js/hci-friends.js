@@ -3,7 +3,15 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+	$(".nameLink").click(function(event) {
+		
+		//var name = $( this );
+		$(this).text("????");
+		event.preventDefault();
+	});
+	
 })
+	
 
 /*
  * Function that is called when the document is ready.
