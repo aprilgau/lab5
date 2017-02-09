@@ -1,13 +1,14 @@
+<script type="text/javascript">
 'use strict';
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
+
 	initializePage();
-	$(".nameLink").click(function(event) {
-		
-		//var name = $( this );
-		$(this).text("????");
+	$( "a").click(function(event) {
+		alert( "The link will no longer take you to jquery.com" );
 		event.preventDefault();
+		//$(this).text("????");
 	});
 	
 })
@@ -18,6 +19,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+
 }
 
 function anagrammedName(name) {
